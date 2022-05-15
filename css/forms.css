@@ -1,0 +1,98 @@
+article img {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 8px double black;
+  border-radius: 25px;
+  box-shadow: rgb(51, 51, 51) 10px 10px 5px;
+}
+
+/* Form styles*/
+
+div.register > label {
+  display: inline-block;
+  width: 140px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+div.register > label:first-of-type {
+margin-top: 20px;
+}
+
+div.register > input {
+  width: 200px;
+}
+
+div#button {
+  justify-content: center;
+  width: 75px;
+}
+
+article fieldset {
+  background-color: rgba(216, 255, 216, 0.3);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+div.MSA > input {
+  margin-bottom: 20px;
+}
+
+input:focus, select:focus{
+  background-color: rgb(220, 255, 220);
+}
+
+select {
+  width: 210px;
+}
+textarea {
+  width: 200px;
+  height: 50px;
+}
+div.radio label {
+  float:left;
+  width: 160px;
+  clear:left;
+}
+article fieldset.radio {
+  width: 100px;
+  float: left;
+}
+
+article fieldset p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+article fieldset a {
+  color: black;
+}
+article fieldset a:link, nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+article fieldset a:hover {
+  color: rgb(181, 58, 58);
+  background-color: rgb(180, 180, 234);
+}
+
+@media only screen and (max-width: 480px) {
+  div.register > label {
+    display: inline-block;
+    width: 80px;
+    margin-left: 5px;
+  }
+
+  div.register > input {
+    width: 175px;
+    text-align: center;
+  }
+  select {
+    width: 180px;
+  }
+}

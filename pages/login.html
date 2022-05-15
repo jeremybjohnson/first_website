@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <script type="text/javascript" src="../scripts/hours_table.js" defer></script>
+    <script type="text/javascript" src="../scripts/grad_days.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.jpg" alt="logo">
+      <h1>Dulles High School</h1>
+      <h2>Youth Expanding Services Program (Y.E.S.)</h2>
+      <nav class="horizontal">
+        <a href="#" id="navicon"><img src="../images/navicon.png" alt="" /></a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="login.html" >Login</a></li>
+          <li><a href="submit.html">Submit Hours</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article id="register">
+
+      <img src="../images/volunteer3.jpeg" alt="">
+      <h1>Login</h1>
+
+      <form action="login" class="register">
+      <fieldset class="register">
+      <div class="register">
+
+        <label for="studid">Student ID:</label>
+        <input type="text" id="studid" name="studid" required autofocus><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="passowrd" required>
+        <div id="button">
+        <input type="submit" value="Login"><br><br>
+        </div>
+      </div>
+
+      <input type="checkbox" id="remember" name="remember" value="yes">
+      <label for="tcs">Remember me?</label><br><br>
+
+        <a class="login"href="forgot_password">Forgot your password?</a>
+        <br/><br>
+        <a class="login"href="register.html">Register as a new user</a>
+      </fieldset>
+      </form>
+      <br><br>
+    </article>
+
+    <aside>
+      <h1>Congratulations <br> Dulles High School!<h1/>
+      <h2 id="hoursSum"></h2>
+
+      <div id="hoursTable"></div>
+      <br><br>
+
+      <h1>Announcements</h1>
+      <br>
+      <h2><em>Graduation Day is May 25th</h2>
+      <h2 id="gradDay"></h2>
+      <ul>
+        <li><em>Online hours submission coming soon!</em></li>
+      </ul>
+      <br><br>
+
+      <fieldset>
+      <p><strong>MSA Students:</strong><br/> Math and Science Academy students
+      graduating in 2019 or later are required to perform community service.
+      12.5 hours per semester, 25 hours per year and 100 hours total.
+      </p>
+      </fieldset>
+    </aside>
+
+  </body>
+</html>
+  <footer></footer>

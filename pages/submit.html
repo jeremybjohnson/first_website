@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <script type="text/javascript" src="../scripts/hours_table.js" defer></script>
+    <script type="text/javascript" src="../scripts/grad_days.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.jpg" alt="logo">
+      <h1>Dulles High School</h1>
+      <h2>Youth Expanding Services Program (Y.E.S.)</h2>
+      <nav class="horizontal">
+        <a href="#" id="navicon"><img src="../images/navicon.png" alt="" /></a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="login.html" >Login</a></li>
+          <li><a href="submit.html">Submit Hours</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <article id="register">
+
+      <img src="../images/volunteer3.jpeg" alt="">
+      <h1>Submit Your Hours</h1>
+
+      <form action="submit_hours" class="register" method="post">
+      <fieldset class="register">
+      <div class="register">
+
+        <label for="f_name">Student ID:</label>
+        <input type="text" id="f_name" name="f_name" placeholder="pull from login" required autofocus><br>
+        <label for="l_name">Password:</label>
+        <input type="text" id="l_name" name="l_name" placeholder="pull from login" required><br>
+        <label for="stu_id">Student ID</label>
+        <input type="text" name="stu_id" id='stud_id' placeholder="pull from login" required><br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="pull from login" required><br>
+        <label for="gradyear">Graduation Year</label>
+        <select class="" name="gradyear" id="gradyear" required placeholder="pull from login">
+          <option value="" selected>--Year--</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+        </select><br>
+        <label for="org">Volunteer Orginaztion</label>
+        <input type="text" name="org" id="org" list="org_list" required>
+        <datalist id="org_list">
+          <option value="Galveston Bay Foundation"></option>
+          <option value="Houston Food Bank"></option>
+          <option value="Houston SCPA"></option>
+          <option value="Habitat for Humanity"></option>
+          <option value="Heights Interfaith Ministries Food Pantry"></option>
+          <option value="Teen Volunteer Houston"></option>
+          <option value="The Beacon"></option>
+          <option value="Friendship Houston"></option>
+          <option value="Emergency Aid Coalition"></option>
+          <option value="Center for Pursuit"></option>
+          <option value="Books Between Kids"></option>
+        </datalist><br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" required><br>
+        <label for="vol_hours">Volunteer hours</label>
+        <input type="number" name="vol_hours" id="vol_hours" value="1" step="1" min="1" max="10" required><br>
+        <label for="supervisor">Supervisor</label>
+        <input type="text" name="supervisor" id="supervisor" value="" placeholder="supervisor name" required><br>
+        <label for="contact">Contact</label>
+        <input type="text" name="contact" id="contact" placeholder="supervisor contact" required><br>
+        <label for="comm_box">Activities / Comments</label>
+        <textarea name="comm_box" id="comm_box"></textarea><br>
+
+        <div class="radio">
+        <label for="">Will you volunteer there again?</label>
+        </div>
+        <fieldset class="radio">
+          <label for="vyes">Yes</label>
+          <input type="radio" name="vyes" id="vyes" value="yes">
+          <label for="vno">No</label>
+          <input type="radio" name="vno" id="vno" value="no">
+        </fieldset>
+        <br><br><br>
+        <div class="radio">
+        <label for="">Did you enjoy your experience?</label>
+        </div>
+        <fieldset class="radio">
+          <label for="eyes">Yes</label>
+          <input type="radio" name="eyes" id="eyes" value="yes">
+          <label for="vno">No</label>
+          <input type="radio" name="eno" id="eno" value="no">
+        </fieldset><br><br><br><br>
+
+        <div class="MSA">
+          <input type="checkbox" id="MSA" name="MSA" value="yes">
+          <label for="MSA">Math &amp; Science Academy Student</label><br>
+        </div>
+
+        <div class="MSA">
+          <input type="checkbox" id="ack" name="ack" value="yes" required>
+          <label for="ack">Hours in compliance with the published Y.E.S. Guidelines*</label><br>
+        </div>
+
+        <div id="button">
+        <input type="submit" value="Submit"><br>
+        </div>
+        <br>
+      </fieldset>
+      </form>
+      <br><br>
+    </article>
+
+    <aside>
+      <h1>Congratulations <br> Dulles High School!<h1/>
+      <h2 id="hoursSum"></h2>
+
+      <div id="hoursTable"></div>
+      <br><br>
+
+      <h1>Announcements</h1>
+      <br>
+      <h2><em>Graduation Day is May 25th</h2>
+      <h2 id="gradDay"></h2>
+      <ul>
+        <li><em>Online hours submission coming soon!</em></li>
+      </ul>
+      <br><br>
+
+      <fieldset>
+      <p><strong>MSA Students:</strong><br/> Math and Science Academy students
+      graduating in 2019 or later are required to perform community service.
+      12.5 hours per semester, 25 hours per year and 100 hours total.
+      </p>
+      </fieldset>
+    </aside>
+    </body>
+</html>

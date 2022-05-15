@@ -1,0 +1,45 @@
+article p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+article img {
+	display: block;
+  width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: 8px outset rgb(153, 0, 153);
+	border-radius: 25px;
+	box-shadow: rgb(51, 51, 51) 10px 10px 5px;
+}
+
+article div#docs ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+}
+article div#docs li {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+    margin-right: 40px;
+}
+
+article div#docs ul {
+  list-style-type: none;
+}
+
+article div#docs a:link, article div#docs a:visited {
+  color: black;
+  text-decoration: none;
+}
+article div#docs a:hover {
+  color: rgb(181, 58, 58);
+  background-color: rgb(180, 180, 234);
+}
+
+@media only screen and (max-width: 480px) {
+	div#docs {
+		display: none;
+	}
+}

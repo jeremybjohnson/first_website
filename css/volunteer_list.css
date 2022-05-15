@@ -1,0 +1,38 @@
+dl.volunteer dt {
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: 40px;
+  border-bottom: 5px double grey;
+}
+dl.volunteer dd {
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+dl.volunteer a {
+  text-decoration: none;
+  color: blue;
+}
+
+dl.volunteer a:hover {
+  color: rgb(181, 58, 58);
+  background-color: rgb(180, 180, 234);
+}
+
+
+article p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+article img {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 8px double black;
+  border-radius: 25px;
+  box-shadow: rgb(51, 51, 51) 10px 10px 5px;
+}

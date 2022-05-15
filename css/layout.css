@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* Structual styles*/
+html {
+  background-color: rgb(82, 82, 154);
+}
+
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  border-left: 5px solid rgb(71, 71, 71);
+  border-right: 5px solid rgb(71, 71, 71);
+  box-shadow: rgb(51, 51, 51) 20px 0px 25px,
+              rgb(51, 51, 51) -20px 0px 25px;
+  color: rgb(51, 51, 51);
+  background-color: rgba(216, 216, 216, 0.6);
+  width: 100%;
+  max-width: 1080px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/*Header Style*/
+header {
+  background-color: rgb(216, 116, 135);
+  margin: 0px;
+  font-family: Quicksand, Verdana, Geneva, sans-serif;
+  border-bottom: 10px outset rgb(153, 0, 153);
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-shadow: rgb(51, 51, 51) 2px 2px 2px;
+  margin-left: 60px;
+  }
+header h2 {
+  font-size: 2.1em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  margin-left: 45px;
+}
+
+header img {
+  display: block;
+  width: 10%;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  box-shadow: rgb(51, 51, 51) 2px 2px 2px;
+  border: 5px outset rgb(153, 0, 153);
+  border-radius: 7px;
+}
+
+/* Navigation Styles */
+
+nav.horizontal a:link, nav.horizontal a:visited {
+  color: black;
+  text-decoration: none;
+}
+nav.horizontal a:hover {
+  color: rgb(181, 58, 58);
+  background-color: rgb(180, 180, 234);
+}
+
+a#navicon {
+  display: none;
+}
+
+a#navicon img {
+  float: left;
+}
+
+
+nav.horizontal ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  list-style-type: none;
+}
+nav.horizontal li {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+}
+
+/* article styles*/
+article {
+  -webkit-flex: 3 1 280px;
+  flex: 3 1 280px;
+
+}
+
+article h1 {
+  font-size: 2.5em;
+  margin: 30px 0px 30px 0px;
+  text-shadow: rgb(51, 51, 51) 2px 2px 1px;
+  letter-spacing: 0.1em;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+
+/*Aside styles*/
+aside {
+  -webkit-flex: 1 1 201px;
+  flex: 1 1 201px;
+  border-left: 3px double black;
+}
+
+aside h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px 0px 0px 0px;
+  padding:0px 10px 0px 10px;
+  text-shadow: rgb(51, 51, 51) 1px 1px 0px;
+}
+aside h2 {
+  font-size: 1.1em;
+  padding:0px 10px 15px 10px;
+  margin-top: 0px;
+  text-align: center;
+  text-shadow: rgb(51, 51, 51) 1px 1px 0px;
+  letter-spacing: 0.05em;
+}
+aside p {
+  font-size: 0.9em;
+  margin:10px 10px 10px 10px;
+}
+
+aside fieldset {
+  background-color: rgba(216, 255, 216, 0.3);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+table.hours {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 80%;
+  border-collapse: collapse;
+  border: 10px outset rgb(153, 0, 153);
+}
+
+table.hours th, table.hours td {
+  border: 3px solid grey;
+}
+
+table.hours th {
+  color: white;
+  background-color: rgb(153, 0, 153);
+  height: 40px;
+}
+
+table.hours td {
+  background-color: rgb(255, 220, 255);
+  height: 30px;
+}
+/* =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+  a#navicon {
+    display: block;
+  }
+  nav.horizontal ul {
+    display: none;
+  }
+  a#navicon:hover + ul, nav.horizontal ul:hover {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+
+  article {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+/* =================================================
+	Tablet and Desktop Styles: 481 pixels and greater
+   =================================================
+*/
+@media only screen and (min-width: 481px) {
+
+
+}
